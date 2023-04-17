@@ -1,8 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const filterSlice = createSlice({
-  name: "filter",
-  initialState: {query: ''},
+  name: 'filter',
+  initialState: { query: '' },
   reducers: {
     setFilter(state, action) {
       state.query = action.payload;
