@@ -63,29 +63,3 @@ export const ContactForm = () => {
 ContactForm.propTypes = {
   onAddContact: PropTypes.func,
 };
-
-// const handleSubmit = (event) => {
-//     event.preventDefault();
-
-//     const valueName = event.target.name.value;
-//     const existstName = contacts.find(contact => contact.name === valueName);
-
-//     if (existstName) {
-//       alert(`This name is already in contacts!`);
-//     }
-
-//     dispatch(addContact(event.target.name.value, event.target.number.value));
-//   }
-
-// const addContact = newContact => {
-//   const findName = newContact.name.toLowerCase();
-//   if (contacts.find(({ name }) => name.toLowerCase() === findName)) {
-//     alert(`${newContact.name} is already in contacts`);
-//     return
-//   }
-// }
-
-// onSubmit = {(values, actions) => {
-//       handleSubmit({...values, id: nanoid()});
-//       actions.resetForm();
-//   }}
